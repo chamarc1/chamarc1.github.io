@@ -35,7 +35,7 @@
 						<nav>
 							<ul>
 								<li><a href="#esi">ESI</a></li>
-								<li><a href="#project1">Team App</a></li>
+								<li><a href="#flatfield">Flatfield</a></li>
 								<li><a href="#coaching">Coaching</a></li>
 								<li><a href="#education">Education</a></li>
 								<li><a href="#about">About</a></li>
@@ -64,13 +64,43 @@
 									The institute shares project pages, publications, instrumentation efforts, news updates, and academic resources through its site. Learn more at <a href="https://esi.umbc.edu" target="_blank">esi.umbc.edu</a>.</p>
 							</article>
 
-						<!-- Team Management Project -->
-						<article id="project1">
-							<h2 class="major">Sports Team Management</h2>
-							<p><b>(Personal) Sports Team Management:</b>
-									<br>Building a secure web-app database managing recreational and competitive sports teams and groups. Features include but not limited to the following: availability tracking, event scheduling, messaging, roster additions, media sharing and invoicing (CSS, Python)</p>
-							<a href="#" class="image main"><img src="images/team-app.png" alt="" /></a>
+						<!-- Flatfield Project -->
+						<article id="flatfield">
+							<h2 class="major">Flatfield</h2>
+							<p><b>SWIR Flatfield Sensor Calibration (ESI @ UMBC | 10/2024–08/2025)</b><br>
+								Built and maintained a production-ready Python calibration pipeline for AirHARP2 SWIR sensor data, focused on improving radiometric consistency before downstream Level-1A processing.</p>
+							<p><b>Mission Context:</b><br>
+								This work supported Earth-observation instrument readiness and analysis for AirHARP2 SWIR operations, including calibration workflows documented in the 2025 AirHARP2 SWIR calibration deck.</p>
+							<p><b>What I Implemented:</b><br>
+								(1) dark-frame averaging and subtraction to remove bias/thermal noise, (2) composite generation with equalized sampling across degree positions, (3) flatfield characterization normalized to mean response, (4) quadratic envelope modeling across cross-track and along-track line cuts, and (5) outlier rejection using sigma filtering with Savitzky-Golay smoothing for robust profile fitting.</p>
+							<p><b>Signal Analysis & Quality Controls:</b><br>
+								Developed 1D profile extraction, parabola-core/FWHM-style region analysis, curve-fit diagnostics, defective-pixel handling via median-filter replacement, and corrected-image clipping to 14-bit sensor bounds for consistent output integrity.</p>
+							<p><b>Pipeline Architecture:</b><br>
+								Modular processors separate image ingestion, composite generation, and flatfield application. The CLI entrypoint accepts wheel position and smoothing controls, then generates quadratic-envelope and pixel-response characterizations for repeatable calibration runs.</p>
 							
+							<p><b>Flatfield - Method:</b><br>
+								Quadratic envelope fitting, ratio-based thresholding, outlier rejection, and smoothing for stable full-FOV correction.</p>
+							<span class="image main"><img src="images/flatfield-method-fit-envelope.png" alt="Flatfield method - quadratic envelope fit" /></span>
+							<p>Quadratic fit to signal envelope.</p>
+							<span class="image main"><img src="images/flatfield-method-histogram-outlier-rejection.png" alt="Flatfield method - histogram and outlier rejection" /></span>
+							<p>Histogram ratio thresholding and outlier rejection.</p>
+
+							<p><b>Defects and Multiplicative Mask:</b><br>
+								Mask derivation and defect visibility analysis from large-scale averaged calibration data.</p>
+							<span class="image main"><img src="images/flatfield-defects-mask-derived.png" alt="Defects and Multiplicative Mask - derived mask view" /></span>
+							<p>Defects and Multiplicative Mask — derived mask view.</p>
+							<span class="image main"><img src="images/flatfield-defects-raw-image.png" alt="Defects and Multiplicative Mask - raw image defect view" /></span>
+							<p>Defects and Multiplicative Mask — raw image defect view.</p>
+
+							<p><b>Mask Applied + 1st Order Visual Correction:</b><br>
+								Application of the multiplicative mask and first-order correction steps, including local gap filling.</p>
+							<span class="image main"><img src="images/flatfield-mask-applied-visual-correction.png" alt="Mask applied plus first-order visual correction" /></span>
+							<p>Mask Applied + 1st Order Visual Correction.</p>
+
+							<p><b>Tech Stack:</b> Python, NumPy, SciPy, Matplotlib, PIL, NetCDF4/HPC-aligned workflows</p>
+							<p><b>Project Artifacts:</b><br>
+								<a href="files/Flatfiled/AirHARP2_SWIR_Cal_UMBC_2025.pdf" target="_blank">AirHARP2 SWIR Calibration Deck (PDF)</a><br>
+								<a href="files/Flatfiled/README.md" target="_blank">README.md</a></p>
 						</article>
 
 						<!-- Coaching -->
@@ -110,6 +140,7 @@
 								<p><b>Libraries:</b> pandas, NumPy, Matplotlib</p>
 								<p><b>Operating Systems:</b> Windows, macOS, Linux</p>
 								<p>Software Engineer | Java Developer | HTML Developer | Python Developer</p>
+								<p><b>Resume:</b> <a href="files/Charlemagne_Resume_2026.pdf" target="_blank">Charlemagne_Resume_2026.pdf</a></p>
 							</article>
 
 						<!-- Contact -->
