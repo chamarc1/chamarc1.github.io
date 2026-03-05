@@ -383,6 +383,16 @@
 
 			}
 
+		// Contact form return URL.
+			var $contactForm = $('#contact-form');
+
+			if ($contactForm.length > 0) {
+				var $nextInput = $contactForm.find('input[name="_next"]');
+
+				if ($nextInput.length > 0)
+					$nextInput.val(window.location.origin + window.location.pathname + '#contact');
+			}
+
 		// Initialize.
 
 			// Hide main, articles.

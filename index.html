@@ -181,7 +181,12 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form action="https://formsubmit.co/chamarc1@outlook.com" method="POST">
+								<form id="contact-form" action="https://formsubmit.co/chamarc1@outlook.com" method="POST" accept-charset="UTF-8">
+									<input type="hidden" name="_subject" value="Portfolio Contact Message" />
+									<input type="hidden" name="_captcha" value="false" />
+									<input type="hidden" name="_template" value="table" />
+									<input type="hidden" name="_next" value="https://chamarc1.github.io/" />
+									<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -189,7 +194,7 @@
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" required />
+											<input type="email" name="email" id="email" required />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
