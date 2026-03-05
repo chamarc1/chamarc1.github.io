@@ -388,9 +388,37 @@
 
 			if ($contactForm.length > 0) {
 				var $nextInput = $contactForm.find('input[name="_next"]');
+				var $status = $('#contact-status');
+				var isWebProtocol = window.location.protocol === 'http:' || window.location.protocol === 'https:';
 
-				if ($nextInput.length > 0)
+				if (isWebProtocol && $nextInput.length > 0)
 					$nextInput.val(window.location.origin + window.location.pathname + '#contact');
+
+				if (!isWebProtocol) {
+					$contactForm.on('submit', function(event) {
+
+						event.preventDefault();
+
+						var name = ($contactForm.find('#name').val() || '').toString().trim();
+						var email = ($contactForm.find('#email').val() || '').toString().trim();
+						var message = ($contactForm.find('#message').val() || '').toString().trim();
+
+						var mailSubject = encodeURIComponent('Portfolio Contact Message - ' + (name || 'No Name'));
+						var mailBody = encodeURIComponent(
+							'Name: ' + name + '\n'
+							+ 'Email: ' + email + '\n\n'
+							+ 'Message:\n' + message
+						);
+
+						if ($status.length > 0)
+							$status.show();
+
+						window.location.href = 'mailto:chamarc1@outlook.com?subject=' + mailSubject + '&body=' + mailBody;
+
+					});
+				}
+				else if ($status.length > 0)
+					$status.hide();
 			}
 
 		// Initialize.
