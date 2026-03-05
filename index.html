@@ -36,6 +36,7 @@
 							<ul>
 								<li><a href="#esi">ESI</a></li>
 								<li><a href="#flatfield">Flatfield</a></li>
+								<li><a href="#swir-l1a">SWIR L1A</a></li>
 								<li><a href="#coaching">Coaching</a></li>
 								<li><a href="#education">Education</a></li>
 								<li><a href="#about">About</a></li>
@@ -102,6 +103,30 @@
 								<a href="files/Flatfiled/AirHARP2_SWIR_Cal_UMBC_2025.pdf" target="_blank">AirHARP2 SWIR Calibration Deck (PDF)</a><br>
 								<a href="files/Flatfiled/README.md" target="_blank">README.md</a></p>
 						</article>
+
+						<!-- SWIR L1A -->
+							<article id="swir-l1a">
+								<h2 class="major">SWIR L1A</h2>
+								<p><b>SWIR L1A Generation Pipeline</b><br>
+									Production workflow for converting AirHARP2 SWIR raw TIFF frames into Level 1A NetCDF4 granules for mission analysis and archival.</p>
+								<p><b>Key Contributions:</b><br>
+									Implemented CFC-capture-ID metadata matching, chronological frame processing, and filter-position-aware data organization across the SWIR processing modules.</p>
+								<p><b>Granule Controller:</b><br>
+									Automated flight-leg detection from timestamp gaps, then segmented data into standard 5-minute (300 second) granules with support for parallel job execution.</p>
+								<p><b>Metadata + Image Matching:</b><br>
+									Matched `.tif` images to `.meta` records by capture ID and exported aligned TEC temperature, filter position, and integration-time fields for each processed frame.</p>
+								<p><b>Workflow Focus:</b><br>
+									Data ingest, corrupted-file filtering, time extraction from CFC IDs, and reproducible Level 1A output generation with robust logging and progress tracking.</p>
+								<p><b>NetCDF4 Product Content:</b><br>
+									Unified frame-based image storage (`sensor1`), timing variables (`time_stamp`, `JD`, `seconds_of_day`), sensor state (`filter_wheel_position`, `integration_time`, `sensor_temperature`), and navigation groups for attitude/orbit records.</p>
+								<p><b>Panoply + NetCDF Demonstration:</b><br>
+									Example Panoply views of the generated SWIR L1A NetCDF file, including variable tree inspection and rendered sensor image output.</p>
+								<span class="image main"><img src="images/Screenshot 2026-03-05 at 10.56.53.png" alt="Panoply variable and NetCDF structure view for SWIR L1A file" /></span>
+								<p>Panoply dataset browser showing SWIR L1A NetCDF groups, variables, and metadata layout.</p>
+								<span class="image main"><img src="images/ezgif-8f6350dc81eb8a43.gif" alt="Panoply rendered SWIR sensor1 image from NetCDF output" /></span>
+								<p>Panoply rendering of <b>sensor1</b> counts from a generated SWIR L1A NetCDF granule.</p>
+								<p><b>Project Artifact:</b> <a href="files/swir-l1agen/README.md" target="_blank">SWIR L1A README</a></p>
+							</article>
 
 						<!-- Coaching -->
 							<article id="coaching">
