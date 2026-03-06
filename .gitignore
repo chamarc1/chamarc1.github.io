@@ -37,8 +37,3 @@ build/
 .venv/
 .venv-flatfield/
 
-# Local/raw data (keep site-linked docs/code trackable)
-files/SWIR_L1A/
-
-# Private Flatfield source files (not for sharing)
-files/Flatfiled/*.py
