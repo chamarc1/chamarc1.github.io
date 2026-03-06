@@ -1,0 +1,1716 @@
+JOB START TIME: Tue Feb 24 14:47:44 EST 2026
+GRANULE COUNTER: enabled
+
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 16 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 16 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T190353.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmprrg96gq_/PACEPAX_AH2SWIRR.20240910T190353.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 16
+  Filter position distribution: {0: np.int64(2), 1: np.int64(4), 2: np.int64(4), 3: np.int64(4), 4: np.int64(2)}
+  TEC temperature range: 7°C to 7°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 16 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 16
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 2 images
+  Position 1 (1.57μm): 4 images
+  Position 2 (1.55μm): 4 images
+  Position 3 (1.38μm): 4 images
+  Position 4 (open): 2 images
+TEC temperature range: 7°C to 7°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T190353.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 29 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 29 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T170150.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp6h_c9dud/PACEPAX_AH2SWIRR.20240910T170150.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 29
+  Filter position distribution: {0: np.int64(3), 1: np.int64(7), 2: np.int64(7), 3: np.int64(8), 4: np.int64(4)}
+  TEC temperature range: 5°C to 8°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 29 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 29
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 3 images
+  Position 1 (1.57μm): 7 images
+  Position 2 (1.55μm): 7 images
+  Position 3 (1.38μm): 8 images
+  Position 4 (open): 4 images
+TEC temperature range: 5°C to 8°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T170150.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 88 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 88 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T192347.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp0xh9eznu/PACEPAX_AH2SWIRR.20240910T192347.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 88
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 5°C to 24°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 88 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 88
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 5°C to 24°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T192347.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 58 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 58 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T181508.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp4q3ne7w0/PACEPAX_AH2SWIRR.20240910T181508.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 58
+  Filter position distribution: {0: np.int64(7), 1: np.int64(15), 2: np.int64(15), 3: np.int64(14), 4: np.int64(7)}
+  TEC temperature range: 9°C to 10°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 58 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 58
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 7 images
+  Position 1 (1.57μm): 15 images
+  Position 2 (1.55μm): 15 images
+  Position 3 (1.38μm): 14 images
+  Position 4 (open): 7 images
+TEC temperature range: 9°C to 10°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T181508.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 90 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 90 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T180010.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp41k_ac1u/PACEPAX_AH2SWIRR.20240910T180010.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 90
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(23), 4: np.int64(12)}
+  TEC temperature range: 5°C to 25°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 90 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 90
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 23 images
+  Position 4 (open): 12 images
+TEC temperature range: 5°C to 25°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T180010.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 88 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 88 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T184856.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpdlormlu3/PACEPAX_AH2SWIRR.20240910T184856.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 88
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 9°C to 10°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 88 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 88
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 9°C to 10°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T184856.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 91 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 91 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T171939.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmprogbzhxk/PACEPAX_AH2SWIRR.20240910T171939.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 91
+  Filter position distribution: {0: np.int64(12), 1: np.int64(24), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 91 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 91
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 12 images
+  Position 1 (1.57μm): 24 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T171939.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 71 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 71 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T174441.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp_8ow0xx8/PACEPAX_AH2SWIRR.20240910T174441.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 71
+  Filter position distribution: {0: np.int64(9), 1: np.int64(18), 2: np.int64(18), 3: np.int64(18), 4: np.int64(8)}
+  TEC temperature range: 9°C to 10°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 71 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 71
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 9 images
+  Position 1 (1.57μm): 18 images
+  Position 2 (1.55μm): 18 images
+  Position 3 (1.38μm): 18 images
+  Position 4 (open): 8 images
+TEC temperature range: 9°C to 10°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T174441.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 77 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 77 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T165738.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpl4f9f5_t/PACEPAX_AH2SWIRR.20240910T165738.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 77
+  Filter position distribution: {0: np.int64(10), 1: np.int64(19), 2: np.int64(19), 3: np.int64(19), 4: np.int64(10)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 77 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 77
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 10 images
+  Position 1 (1.57μm): 19 images
+  Position 2 (1.55μm): 19 images
+  Position 3 (1.38μm): 19 images
+  Position 4 (open): 10 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T165738.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 75 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 75 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T171042.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp1fd9qcg8/PACEPAX_AH2SWIRR.20240910T171042.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 75
+  Filter position distribution: {0: np.int64(10), 1: np.int64(20), 2: np.int64(18), 3: np.int64(18), 4: np.int64(9)}
+  TEC temperature range: 7°C to 27°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 75 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 75
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 10 images
+  Position 1 (1.57μm): 20 images
+  Position 2 (1.55μm): 18 images
+  Position 3 (1.38μm): 18 images
+  Position 4 (open): 9 images
+TEC temperature range: 7°C to 27°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T171042.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 39 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 39 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T194347.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp_krqtt5m/PACEPAX_AH2SWIRR.20240910T194347.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 39
+  Filter position distribution: {0: np.int64(5), 1: np.int64(10), 2: np.int64(9), 3: np.int64(10), 4: np.int64(5)}
+  TEC temperature range: 7°C to 8°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 39 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 39
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 5 images
+  Position 1 (1.57μm): 10 images
+  Position 2 (1.55μm): 9 images
+  Position 3 (1.38μm): 10 images
+  Position 4 (open): 5 images
+TEC temperature range: 7°C to 8°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T194347.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 89 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 89 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T184355.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp8ojybtdl/PACEPAX_AH2SWIRR.20240910T184355.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 89
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(23), 4: np.int64(11)}
+  TEC temperature range: 10°C to 13°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 89 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 89
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 23 images
+  Position 4 (open): 11 images
+TEC temperature range: 10°C to 13°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T184355.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 87 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 87 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T195515.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpoxfrry65/PACEPAX_AH2SWIRR.20240910T195515.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 87
+  Filter position distribution: {0: np.int64(10), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 87 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 87
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 10 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T195515.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 89 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 89 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T185855.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmptnql8hhw/PACEPAX_AH2SWIRR.20240910T185855.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 89
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(23), 4: np.int64(11)}
+  TEC temperature range: 7°C to 8°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 89 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 89
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 23 images
+  Position 4 (open): 11 images
+TEC temperature range: 7°C to 8°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T185855.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 87 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 87 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T200015.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpzuqxc71u/PACEPAX_AH2SWIRR.20240910T200015.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 87
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(21), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 4°C to 24°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 87 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 87
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 21 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 24°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T200015.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 87 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 87 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T195016.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpawuk3xpa/PACEPAX_AH2SWIRR.20240910T195016.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 87
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(21), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 87 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 87
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 21 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T195016.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Initializing SWIR image processor...
+Getting SWIR image filenames and paths...
+
+Found 87 valid SWIR images
+Getting SWIR image filenames and paths...
+Getting SWIR metadata filenames and paths...
+Found 91 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 91 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T180507.L1A.V001.nc NetCDF4...
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+/tmp/slurm-cmarc-15628/tmpb29ssxrf/PACEPAX_AH2SWIRR.20240910T180507.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 91
+  Filter position distribution: {0: np.int64(11), 1: np.int64(23), 2: np.int64(23), 3: np.int64(23), 4: np.int64(11)}
+  TEC temperature range: 12°C to 18°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 91 images in chronological order
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 87 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T191348.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpj6d7zc_q/PACEPAX_AH2SWIRR.20240910T191348.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+All SWIR images processed and written to NetCDF4
+Processing summary:
+
+  Total images: 87
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 91
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 23 images
+  Position 2 (1.55μm): 23 images
+  Position 3 (1.38μm): 23 images
+  Position 4 (open): 11 images
+TEC temperature range: 12°C to 18°C
+Integration time range: 10.0ms to 20.0ms
+
+  Filter position distribution: {0: np.int64(11), 1: np.int64(21), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T180507.L1A.V001.nc
+  TEC temperature range: 4°C to 5°C
+Temporary directory cleaned up.
+  Integration time range: 10.0ms to 20.0ms
+============================================================
+  Processing 87 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 87
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 21 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T191348.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Initializing SWIR image processor...
+Getting SWIR image filenames and paths...
+Found 91 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Initializing SWIR image processor...
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+
+  First ACQ ID: 1719361256897
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Initializing SWIR image processor...
+Getting SWIR image filenames and paths...
+Found 89 valid SWIR images
+Matching images with metadata...
+
+
+Found 89 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Successfully matched 91 images with metadata
+Getting SWIR image filenames and paths...
+Getting SWIR image filenames and paths...
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Initializing PACEPAX_AH2SWIRR.20240910T172940.L1A.V001.nc NetCDF4...
+Found 91 valid SWIR images
+Found 88 valid SWIR images
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+/tmp/slurm-cmarc-15628/tmpy3fovjjc/PACEPAX_AH2SWIRR.20240910T172940.L1A.V001.nc NetCDF4 initialization successful
+Getting SWIR metadata filenames and paths...
+Getting SWIR metadata filenames and paths...
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Found 3087 metadata entries
+Found 3087 metadata entries
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 89 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T182354.L1A.V001.nc NetCDF4...
+Processing summary:
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+/tmp/slurm-cmarc-15628/tmp63q447v2/PACEPAX_AH2SWIRR.20240910T182354.L1A.V001.nc NetCDF4 initialization successful
+  Total images: 91
+  Filter position distribution: {0: np.int64(11), 1: np.int64(23), 2: np.int64(23), 3: np.int64(23), 4: np.int64(11)}
+  First ACQ ID: 1719361256897
+  First ACQ ID: 1719361256897
+Matching images with metadata...
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+  TEC temperature range: 14°C to 19°C
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Successfully matched 89 images with metadata
+Processing summary:
+  Integration time range: 10.0ms to 20.0ms
+Matching images with metadata...
+Matching images with metadata...
+Initializing PACEPAX_AH2SWIRR.20240910T183854.L1A.V001.nc NetCDF4...
+  Total images: 89
+  Processing 91 images in chronological order
+Successfully matched 91 images with metadata
+Successfully matched 88 images with metadata
+/tmp/slurm-cmarc-15628/tmpuz1gt0l7/PACEPAX_AH2SWIRR.20240910T183854.L1A.V001.nc NetCDF4 initialization successful
+  Filter position distribution: {0: np.int64(12), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+Initializing PACEPAX_AH2SWIRR.20240910T172440.L1A.V001.nc NetCDF4...
+Initializing PACEPAX_AH2SWIRR.20240910T193846.L1A.V001.nc NetCDF4...
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+  TEC temperature range: 4°C to 5°C
+/tmp/slurm-cmarc-15628/tmp628vrdj2/PACEPAX_AH2SWIRR.20240910T172440.L1A.V001.nc NetCDF4 initialization successful
+/tmp/slurm-cmarc-15628/tmp_d3ccrbo/PACEPAX_AH2SWIRR.20240910T193846.L1A.V001.nc NetCDF4 initialization successful
+Processing summary:
+  Integration time range: 10.0ms to 20.0ms
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+  Total images: 89
+  Processing 89 images in chronological order
+Processing summary:
+Processing summary:
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(23), 3: np.int64(22), 4: np.int64(11)}
+  Total images: 91
+  Total images: 88
+  TEC temperature range: 13°C to 19°C
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(23), 3: np.int64(23), 4: np.int64(12)}
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  Integration time range: 10.0ms to 20.0ms
+  TEC temperature range: 6°C to 26°C
+  TEC temperature range: 8°C to 9°C
+  Processing 89 images in chronological order
+  Integration time range: 10.0ms to 20.0ms
+  Integration time range: 10.0ms to 20.0ms
+  Processing 91 images in chronological order
+  Processing 88 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+All SWIR images processed and written to NetCDF4
+AH2 IMU navigation data copied successfully
+
+
+Copying AH2 IMU navigation data...
+All SWIR images processed and written to NetCDF4
+Copying ER2 navigation data...
+AH2 IMU navigation data copied successfully
+
+All SWIR images processed and written to NetCDF4
+
+All SWIR images processed and written to NetCDF4
+ER2 navigation data copied successfully
+Copying ER2 navigation data...
+
+Copying AH2 IMU navigation data...
+
+
+ER2 navigation data copied successfully
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+Copying AH2 IMU navigation data...
+============================================================
+
+AH2 IMU navigation data copied successfully
+
+AH2 IMU navigation data copied successfully
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 88
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+============================================================
+
+Copying ER2 navigation data...
+
+  Position 1 (1.57μm): 22 images
+SWIR L1A PROCESSING COMPLETE
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+Copying ER2 navigation data...
+  Position 2 (1.55μm): 22 images
+============================================================
+ER2 navigation data copied successfully
+
+ER2 navigation data copied successfully
+  Position 3 (1.38μm): 22 images
+Total images processed: 91
+
+============================================================
+
+  Position 4 (open): 11 images
+Processing level: L1A
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+TEC temperature range: 8°C to 9°C
+Filter position distribution:
+SWIR L1A PROCESSING COMPLETE
+============================================================
+SWIR L1A PROCESSING COMPLETE
+Integration time range: 10.0ms to 20.0ms
+  Position 0 (dark): 11 images
+============================================================
+Total images processed: 89
+============================================================
+
+  Position 1 (1.57μm): 23 images
+Total images processed: 89
+Processing level: L1A
+Total images processed: 91
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T193846.L1A.V001.nc
+Temporary directory cleaned up.
+  Position 2 (1.55μm): 23 images
+Processing level: L1A
+Filter position distribution:
+Processing level: L1A
+============================================================
+  Position 3 (1.38μm): 23 images
+Filter position distribution:
+  Position 0 (dark): 12 images
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 4 (open): 11 images
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 1 (1.57μm): 22 images
+TEC temperature range: 14°C to 19°C
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 2 (1.55μm): 23 images
+Integration time range: 10.0ms to 20.0ms
+  Position 2 (1.55μm): 23 images
+  Position 3 (1.38μm): 22 images
+  Position 3 (1.38μm): 23 images
+
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+  Position 4 (open): 12 images
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T172940.L1A.V001.nc
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+TEC temperature range: 6°C to 26°C
+Temporary directory cleaned up.
+TEC temperature range: 13°C to 19°C
+Integration time range: 10.0ms to 20.0ms
+Integration time range: 10.0ms to 20.0ms
+============================================================
+Integration time range: 10.0ms to 20.0ms
+
+
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T182354.L1A.V001.nc
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T172440.L1A.V001.nc
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T183854.L1A.V001.nc
+Temporary directory cleaned up.
+Temporary directory cleaned up.
+Temporary directory cleaned up.
+============================================================
+============================================================
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 88 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 88 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T192848.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp765hrflu/PACEPAX_AH2SWIRR.20240910T192848.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 88
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 11°C to 16°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 88 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 88
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 11°C to 16°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T192848.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 92 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 92 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T170540.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpa_v59wdn/PACEPAX_AH2SWIRR.20240910T170540.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 92
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(23), 3: np.int64(24), 4: np.int64(12)}
+  TEC temperature range: 4°C to 7°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 92 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 92
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 23 images
+  Position 3 (1.38μm): 24 images
+  Position 4 (open): 12 images
+TEC temperature range: 4°C to 7°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T170540.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 91 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 91 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T173440.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmplr9t_ea6/PACEPAX_AH2SWIRR.20240910T173440.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 91
+  Filter position distribution: {0: np.int64(12), 1: np.int64(23), 2: np.int64(23), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 12°C to 14°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 91 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 91
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 12 images
+  Position 1 (1.57μm): 23 images
+  Position 2 (1.55μm): 23 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 12°C to 14°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T173440.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 90 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 90 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T181007.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp3avyp7xw/PACEPAX_AH2SWIRR.20240910T181007.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 90
+  Filter position distribution: {0: np.int64(12), 1: np.int64(23), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 10°C to 12°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 90 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 90
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 12 images
+  Position 1 (1.57μm): 23 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 10°C to 12°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T181007.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 4 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 4 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T201017.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpt68jwq7m/PACEPAX_AH2SWIRR.20240910T201017.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 4
+  Filter position distribution: {0: np.int64(0), 1: np.int64(1), 2: np.int64(1), 3: np.int64(1), 4: np.int64(1)}
+  TEC temperature range: 14°C to 14°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 4 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 4
+Processing level: L1A
+Filter position distribution:
+  Position 1 (1.57μm): 1 images
+  Position 2 (1.55μm): 1 images
+  Position 3 (1.38μm): 1 images
+  Position 4 (open): 1 images
+TEC temperature range: 14°C to 14°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T201017.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 88 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 88 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T193348.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp0brmpds7/PACEPAX_AH2SWIRR.20240910T193348.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 88
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 9°C to 11°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 88 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 88
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 9°C to 11°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T193348.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 89 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 89 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T185354.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpnrfoger9/PACEPAX_AH2SWIRR.20240910T185354.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 89
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(12)}
+  TEC temperature range: 8°C to 9°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 89 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 89
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 12 images
+TEC temperature range: 8°C to 9°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T185354.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 90 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 90 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T175507.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpo75pajwt/PACEPAX_AH2SWIRR.20240910T175507.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 90
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(23), 3: np.int64(23), 4: np.int64(11)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 90 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 90
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 23 images
+  Position 3 (1.38μm): 23 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T175507.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 88 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 88 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T190847.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpwkwka98o/PACEPAX_AH2SWIRR.20240910T190847.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 88
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 88 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 88
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T190847.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 91 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 91 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T173939.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmplg_z51ha/PACEPAX_AH2SWIRR.20240910T173939.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 91
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(23), 3: np.int64(23), 4: np.int64(12)}
+  TEC temperature range: 10°C to 12°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 91 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 91
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 23 images
+  Position 3 (1.38μm): 23 images
+  Position 4 (open): 12 images
+TEC temperature range: 10°C to 12°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T173939.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 90 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 90 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T175009.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpio7wotkm/PACEPAX_AH2SWIRR.20240910T175009.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 90
+  Filter position distribution: {0: np.int64(11), 1: np.int64(23), 2: np.int64(23), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 90 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 90
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 23 images
+  Position 2 (1.55μm): 23 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T175009.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 87 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 87 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T191848.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpzm441t8f/PACEPAX_AH2SWIRR.20240910T191848.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 87
+  Filter position distribution: {0: np.int64(10), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 87 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 87
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 10 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T191848.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 88 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 88 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T182855.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp1f1656es/PACEPAX_AH2SWIRR.20240910T182855.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 88
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 4°C to 5°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 88 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 88
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 4°C to 5°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T182855.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 87 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 87 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T200515.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmp8iqd5i5n/PACEPAX_AH2SWIRR.20240910T200515.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 87
+  Filter position distribution: {0: np.int64(11), 1: np.int64(22), 2: np.int64(22), 3: np.int64(22), 4: np.int64(10)}
+  TEC temperature range: 14°C to 24°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 87 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 87
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 22 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 10 images
+TEC temperature range: 14°C to 24°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T200515.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+Initializing SWIR image processor...
+
+Getting SWIR image filenames and paths...
+Found 89 valid SWIR images
+Getting SWIR metadata filenames and paths...
+Found 3087 metadata entries
+Calculated time offset: 6632042103ms from metadata file 20240910_183459_SWIR.meta
+  First ACQ ID: 1719361256897
+  This will correct 2024-06-26 00:20:56 UTC timestamps to 2024-09-10 18:34:59 UTC
+Matching images with metadata...
+Successfully matched 89 images with metadata
+Initializing PACEPAX_AH2SWIRR.20240910T183354.L1A.V001.nc NetCDF4...
+/tmp/slurm-cmarc-15628/tmpyl7wnkbq/PACEPAX_AH2SWIRR.20240910T183354.L1A.V001.nc NetCDF4 initialization successful
+Processing SWIR images to NetCDF4 using SWIR_img_processor...
+Processing summary:
+  Total images: 89
+  Filter position distribution: {0: np.int64(11), 1: np.int64(23), 2: np.int64(22), 3: np.int64(22), 4: np.int64(11)}
+  TEC temperature range: 5°C to 24°C
+  Integration time range: 10.0ms to 20.0ms
+  Processing 89 images in chronological order
+All SWIR images processed and written to NetCDF4
+
+Copying AH2 IMU navigation data...
+AH2 IMU navigation data copied successfully
+
+Copying ER2 navigation data...
+ER2 navigation data copied successfully
+
+============================================================
+SWIR L1A PROCESSING COMPLETE
+============================================================
+Total images processed: 89
+Processing level: L1A
+Filter position distribution:
+  Position 0 (dark): 11 images
+  Position 1 (1.57μm): 23 images
+  Position 2 (1.55μm): 22 images
+  Position 3 (1.38μm): 22 images
+  Position 4 (open): 11 images
+TEC temperature range: 5°C to 24°C
+Integration time range: 10.0ms to 20.0ms
+
+NetCDF4 file saved: /data/ESI/User/cmarc/Projects/AirHARP2/SWIR_output/nc_output_dir/20240910/PACEPAX_AH2SWIRR.20240910T183354.L1A.V001.nc
+Temporary directory cleaned up.
+============================================================
+JOB END TIME: Tue Feb 24 14:48:00 EST 2026
+ELAPSED: 00:00:16
+GRANULES: 38/38 completed
+GRANULES FAILED: 0
