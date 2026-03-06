@@ -77,12 +77,12 @@
 								This work supported Earth-observation instrument readiness and analysis for AirHARP2 SWIR operations, including calibration workflows documented in the 2025 AirHARP2 SWIR calibration deck.</p>
 							<p><b>What I Implemented:</b><br>
 								(1) dark-frame averaging and subtraction to remove bias/thermal noise, (2) composite generation with equalized sampling across degree positions, (3) flatfield characterization normalized to mean response, (4) quadratic envelope modeling across cross-track and along-track line cuts, and (5) outlier rejection using sigma filtering with Savitzky-Golay smoothing for robust profile fitting.</p>
-							<p><b>Signal Analysis & Quality Controls:</b><br>
+							<p><b>Signal Analysis and Quality Controls:</b><br>
 								Developed 1D profile extraction, parabola-core/FWHM-style region analysis, curve-fit diagnostics, defective-pixel handling via median-filter replacement, and corrected-image clipping to 14-bit sensor bounds for consistent output integrity.</p>
 							<p><b>Pipeline Architecture:</b><br>
 								Modular processors separate image ingestion, composite generation, and flatfield application. The CLI entrypoint accepts wheel position and smoothing controls, then generates quadratic-envelope and pixel-response characterizations for repeatable calibration runs.</p>
 							
-							<p><b>Flatfield - Method:</b><br>
+							<p><b>Flatfield Method:</b><br>
 								Quadratic envelope fitting, ratio-based thresholding, outlier rejection, and smoothing for stable full-FOV correction.</p>
 							<span class="image main"><img src="images/flatfield-method-fit-envelope.png" alt="Flatfield method - quadratic envelope fit" /></span>
 							<p>Quadratic fit to signal envelope.</p>
@@ -96,40 +96,126 @@
 							<span class="image main"><img src="images/flatfield-defects-raw-image.png" alt="Defects and Multiplicative Mask - raw image defect view" /></span>
 							<p>Defects and Multiplicative Mask — raw image defect view.</p>
 
-							<p><b>Mask Applied + 1st Order Visual Correction:</b><br>
+							<p><b>Mask Applied and First-Order Visual Correction:</b><br>
 								Application of the multiplicative mask and first-order correction steps, including local gap filling.</p>
 							<span class="image main"><img src="images/flatfield-mask-applied-visual-correction.png" alt="Mask applied plus first-order visual correction" /></span>
-							<p>Mask Applied + 1st Order Visual Correction.</p>
+							<p>Mask Applied and First-Order Visual Correction.</p>
 
-							<p><b>Tech Stack:</b> Python, NumPy, SciPy, Matplotlib, PIL, NetCDF4/HPC-aligned workflows</p>
+							<p><b>Tech Stack:</b> Python, NumPy, SciPy (ndimage/signal/optimize), Pandas, Matplotlib, Pillow (PIL), argparse, JSON diagnostics, and HPC-aligned batch calibration workflows</p>
+							<p><b>Environment:</b> Python 3.7+; install with <code>pip install numpy matplotlib scipy pillow pandas</code></p>
 							<p><b>Project Artifacts:</b><br>
-								<a href="files/Flatfiled/AirHARP2_SWIR_Cal_UMBC_2025.pdf" target="_blank">AirHARP2 SWIR Calibration Deck (PDF)</a><br>
-								<a href="files/Flatfiled/README.md" target="_blank">README.md</a></p>
+								<a href="files/Flatfiled/README.md" target="_blank">README.md</a><br>
+								<a href="files/Flatfiled/AirHARP2_SWIR_Cal_UMBC_2025.pdf" target="_blank">AirHARP2_SWIR_Cal_UMBC_2025.pdf</a><br>
+								<a href="files/Flatfiled/202502_SWIR_Flatfield_Matched_Metadata_v2.csv" target="_blank">202502_SWIR_Flatfield_Matched_Metadata_v2.csv</a></p>
+
+							<p><b>Source Files:</b><br>
+								<a href="files/Flatfiled/Main.py" target="_blank">Main.py</a><br>
+								<a href="files/Flatfiled/analyze_flatfield_effectiveness.py" target="_blank">analyze_flatfield_effectiveness.py</a><br>
+								<a href="files/Flatfiled/create_summary_visualization.py" target="_blank">create_summary_visualization.py</a><br>
+								<a href="files/Flatfiled/diagnose_flatfield.py" target="_blank">diagnose_flatfield.py</a><br>
+								<a href="files/Flatfiled/find_optical_centers.py" target="_blank">find_optical_centers.py</a><br>
+								<a href="files/Flatfiled/project_modules/CompositeProcessor.py" target="_blank">project_modules/CompositeProcessor.py</a><br>
+								<a href="files/Flatfiled/project_modules/Constants.py" target="_blank">project_modules/Constants.py</a><br>
+								<a href="files/Flatfiled/project_modules/FlatfieldProcessor.py" target="_blank">project_modules/FlatfieldProcessor.py</a><br>
+								<a href="files/Flatfiled/project_modules/ImageProcessor.py" target="_blank">project_modules/ImageProcessor.py</a><br>
+								<a href="files/Flatfiled/project_modules/SWIR_Image_Data_TEC_Metadata_Matcher.py" target="_blank">project_modules/SWIR_Image_Data_TEC_Metadata_Matcher.py</a><br>
+								<a href="files/Flatfiled/test_effectiveness_fix.py" target="_blank">test_effectiveness_fix.py</a><br>
+								<a href="files/Flatfiled/test_optical_center_fix.py" target="_blank">test_optical_center_fix.py</a></p>
+
+							<p><b>Directory Structure:</b></p>
+							<pre><code>files/Flatfiled/
+├── README.md
+├── AirHARP2_SWIR_Cal_UMBC_2025.pdf
+├── 202502_SWIR_Flatfield_Matched_Metadata_v2.csv
+├── Main.py
+├── analyze_flatfield_effectiveness.py
+├── create_summary_visualization.py
+├── diagnose_flatfield.py
+├── find_optical_centers.py
+├── project_modules/
+│   ├── CompositeProcessor.py
+│   ├── Constants.py
+│   ├── FlatfieldProcessor.py
+│   ├── ImageProcessor.py
+│   └── SWIR_Image_Data_TEC_Metadata_Matcher.py
+├── test_effectiveness_fix.py
+├── test_optical_center_fix.py
+├── metadata_matcher/
+│   └── 202502_SWIR_Flatfield_Matched_Metadata_v2.csv
+└── Images/
+    ├── Corrected_Images/
+    ├── OpticalCenter_Analysis/
+    └── PowerPoint_Plots/</code></pre>
 						</article>
 
 						<!-- SWIR L1A -->
 							<article id="swir-l1a">
 								<h2 class="major">SWIR L1A</h2>
-								<p><b>SWIR L1A Generation Pipeline</b><br>
+								<p><b>SWIR L1A Generation Pipeline:</b><br>
 									Production workflow for converting AirHARP2 SWIR raw TIFF frames into Level 1A NetCDF4 granules for mission analysis and archival.</p>
 								<p><b>Key Contributions:</b><br>
 									Implemented CFC-capture-ID metadata matching, chronological frame processing, and filter-position-aware data organization across the SWIR processing modules.</p>
 								<p><b>Granule Controller:</b><br>
 									Automated flight-leg detection from timestamp gaps, then segmented data into standard 5-minute (300 second) granules with support for parallel job execution.</p>
-								<p><b>Metadata + Image Matching:</b><br>
+								<p><b>Metadata and Image Matching:</b><br>
 									Matched `.tif` images to `.meta` records by capture ID and exported aligned TEC temperature, filter position, and integration-time fields for each processed frame.</p>
 								<p><b>Workflow Focus:</b><br>
 									Data ingest, corrupted-file filtering, time extraction from CFC IDs, and reproducible Level 1A output generation with robust logging and progress tracking.</p>
-								<p><b>Tech Stack:</b> Python, NumPy, Pandas, NetCDF4, Pillow (PIL), argparse, multiprocessing</p>
+								<p><b>Tech Stack:</b> Python, NumPy, Pandas, NetCDF4, Pillow (PIL), argparse, multiprocessing, subprocess orchestration, pathlib, XML parsing (ElementTree), and Slurm/GNU Parallel-ready batch execution</p>
+								<p><b>Environment:</b> Python 3.9+; install with <code>pip install -r requirements.txt</code> (or <code>pip install numpy pandas netCDF4 Pillow</code>)</p>
 								<p><b>NetCDF4 Product Content:</b><br>
 									Unified frame-based image storage (`sensor1`), timing variables (`time_stamp`, `JD`, `seconds_of_day`), sensor state (`filter_wheel_position`, `integration_time`, `sensor_temperature`), and navigation groups for attitude/orbit records.</p>
-								<p><b>Panoply + NetCDF Demonstration:</b><br>
+								<p><b>Panoply and NetCDF Demonstration:</b><br>
 									Example Panoply views of the generated SWIR L1A NetCDF file, including variable tree inspection and rendered sensor image output.</p>
 								<span class="image main"><img src="images/Screenshot 2026-03-05 at 10.56.53.png" alt="Panoply variable and NetCDF structure view for SWIR L1A file" /></span>
 								<p>Panoply dataset browser showing SWIR L1A NetCDF groups, variables, and metadata layout.</p>
 								<span class="image main"><img src="images/ezgif-8f6350dc81eb8a43.gif" alt="Panoply rendered SWIR sensor1 image from NetCDF output" /></span>
 								<p>Panoply rendering of <b>sensor1</b> counts from a generated SWIR L1A NetCDF granule.</p>
-								<p><b>Project Artifact:</b> <a href="files/swir-l1agen/README.md" target="_blank">SWIR L1A README</a></p>
+								<p><b>Project Artifacts:</b><br>
+									<a href="files/swir-l1agen/README.md" target="_blank">README.md</a><br>
+									<a href="files/swir-l1agen/requirements.txt" target="_blank">requirements.txt</a></p>
+
+								<p><b>Source Files:</b><br>
+									<a href="files/swir-l1agen/l1agen_SWIR_Granule_Controller.py" target="_blank">l1agen_SWIR_Granule_Controller.py</a><br>
+									<a href="files/swir-l1agen/l1agen_SWIR_NC_Processor.py" target="_blank">l1agen_SWIR_NC_Processor.py</a><br>
+									<a href="files/swir-l1agen/modules_l1a_SWIR/l1agen_Constants.py" target="_blank">modules_l1a_SWIR/l1agen_Constants.py</a><br>
+									<a href="files/swir-l1agen/modules_l1a_SWIR/l1agen_SWIR_Image_Data_TEC_Metadata_Matcher.py" target="_blank">modules_l1a_SWIR/l1agen_SWIR_Image_Data_TEC_Metadata_Matcher.py</a><br>
+									<a href="files/swir-l1agen/modules_l1a_SWIR/l1agen_SWIR_Img_Processor.py" target="_blank">modules_l1a_SWIR/l1agen_SWIR_Img_Processor.py</a><br>
+									<a href="files/swir-l1agen/project_modules/Constants.py" target="_blank">project_modules/Constants.py</a><br>
+									<a href="files/swir-l1agen/project_modules/SWIR_Granule_Controller.py" target="_blank">project_modules/SWIR_Granule_Controller.py</a><br>
+									<a href="files/swir-l1agen/project_modules/SWIR_Image_Data_TEC_Metadata_Matcher.py" target="_blank">project_modules/SWIR_Image_Data_TEC_Metadata_Matcher.py</a><br>
+									<a href="files/swir-l1agen/project_modules/SWIR_Img_Processor.py" target="_blank">project_modules/SWIR_Img_Processor.py</a><br>
+									<a href="files/swir-l1agen/project_modules/SWIR_NC_Processor.py" target="_blank">project_modules/SWIR_NC_Processor.py</a><br>
+									<a href="files/swir-l1agen/tests/l1agen_ah2uv.py" target="_blank">tests/l1agen_ah2uv.py</a><br>
+									<a href="files/swir-l1agen/tests/l1agen_ah2uv_controller.py" target="_blank">tests/l1agen_ah2uv_controller.py</a><br>
+									<a href="files/swir-l1agen/tests/test_load_granules.py" target="_blank">tests/test_load_granules.py</a></p>
+
+								<p><b>Directory Structure:</b></p>
+								<pre><code>files/swir-l1agen/
+├── README.md
+├── requirements.txt
+├── l1agen_SWIR_Granule_Controller.py
+├── l1agen_SWIR_NC_Processor.py
+├── modules_l1a_SWIR/
+│   ├── __init__.py
+│   ├── l1agen_Constants.py
+│   ├── l1agen_SWIR_Image_Data_TEC_Metadata_Matcher.py
+│   └── l1agen_SWIR_Img_Processor.py
+├── project_modules/
+│   ├── Constants.py
+│   ├── SWIR_Granule_Controller.py
+│   ├── SWIR_Image_Data_TEC_Metadata_Matcher.py
+│   ├── SWIR_Img_Processor.py
+│   └── SWIR_NC_Processor.py
+├── runs/
+│   ├── l1agen_swir_batch.sh
+│   └── log-cmarc/
+└── tests/
+    ├── __init__.py
+    ├── AH2_SWIR_Camera_Visualizer.ipynb
+    ├── l1agen_ah2uv.py
+    ├── l1agen_ah2uv_controller.py
+    └── test_load_granules.py</code></pre>
 							</article>
 
 						<!-- Coaching -->
@@ -168,7 +254,7 @@
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/self1.jpeg" alt="" /></span>
-								<p><b>Software developer focused on scientific data pipelines and full-stack engineering.</b></p>
+								<p><b>Software Developer Focused on Scientific Data Pipelines and Full-Stack Engineering</b></p>
 								<p>Over the last few years, I have focused on Earth-observation work at UMBC's Earth and Space Institute, where I developed Python workflows for AirHARP2 SWIR processing from calibration through Level 1A product generation.</p>
 								<p>In the Flatfield project, I built and maintained calibration tooling for dark-frame correction, composite generation, defect masking, and quadratic-envelope-based flatfield normalization because I care about producing clean, reliable data for downstream analysis.</p>
 								<p>In the SWIR L1A project, I implemented metadata/image matching by capture ID, chronological frame processing, flight-leg segmentation, and 5-minute NetCDF4 granule generation for reproducible mission analysis and archival.</p>
