@@ -17,14 +17,27 @@
 		<meta property="og:image:height" content="627" />
 		<meta property="og:type" content='website'/>
 
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-5VMM2ML5L1"></script>
+		<!-- Google tag (gtag.js), deferred to protect initial page load -->
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'G-5VMM2ML5L1');
+
+			window.addEventListener('load', function () {
+				var loadGoogleTag = function () {
+					var script = document.createElement('script');
+					script.async = true;
+					script.src = 'https://www.googletagmanager.com/gtag/js?id=G-5VMM2ML5L1';
+					document.head.appendChild(script);
+				};
+
+				if ('requestIdleCallback' in window) {
+					requestIdleCallback(loadGoogleTag, { timeout: 2000 });
+				} else {
+					setTimeout(loadGoogleTag, 1000);
+				}
+			});
 		</script>
 	</head>
 	<body class="is-preload">
