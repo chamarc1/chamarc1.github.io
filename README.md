@@ -75,6 +75,25 @@ git push
 
 After push, GitHub Pages publishes the updated site automatically.
 
+## Website Tracking (Location + Visit Time)
+
+Google Analytics 4 has been added to `index.html` with a placeholder measurement ID.
+
+Setup steps:
+
+1. Create a GA4 property and Web Data Stream for `https://chamarc1.github.io`
+2. Copy your Measurement ID (format: `G-XXXXXXXXXX`)
+3. In `index.html`, replace both `G-XXXXXXXXXX` values with your real ID
+4. Push changes to GitHub Pages
+
+What you can see in GA4:
+
+- Visit date/time trends (Reports and Realtime)
+- Visitor location by country/city (aggregated by IP-derived geo)
+- Device, browser, and traffic source details
+
+Note: if you use exact browser geolocation or any personally identifiable tracking, add an explicit consent banner and privacy-policy disclosure to stay compliant with privacy laws.
+
 ## Quality Checklist
 
 Before each push:
