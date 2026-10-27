@@ -1,23 +1,31 @@
 <!DOCTYPE HTML>
 <!-- Personal site developed and customized by developer Charlemagne Marc. -->
 
-<html>
+<html lang="en">
 	<head>
-		<title>Charlemagne Marc</title>
+		<!-- Page identity and search metadata. Keep the canonical URL aligned with the published site. -->
+		<title>Charlemagne Marc | Software Developer</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="Charlemagne Marc" />
+		<meta name="description" content="Charlemagne Marc is a software developer focused on scientific data pipelines, Earth-observation processing, and full-stack engineering." />
+		<meta name="theme-color" content="#1b1f22" />
+		<link rel="canonical" href="https://chamarc1.github.io/" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<meta property="og:image" content="images/self1.jpeg">
-		<meta property="og:description" content="Developer and Coaching Information."/>
-		<meta property="og:url" content="chamarc1.github.io"/>
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="627" />
-		<meta property="og:type" content='website'/>
+		<meta property="og:title" content="Charlemagne Marc | Software Developer" />
+		<meta property="og:description" content="Scientific data pipelines, AirHARP2 SWIR processing, and full-stack engineering." />
+		<meta property="og:image" content="https://chamarc1.github.io/images/self1.jpeg" />
+		<meta property="og:url" content="https://chamarc1.github.io/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Charlemagne Marc" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Charlemagne Marc | Software Developer" />
+		<meta name="twitter:description" content="Scientific data pipelines, AirHARP2 SWIR processing, and full-stack engineering." />
+		<meta name="twitter:image" content="https://chamarc1.github.io/images/self1.jpeg" />
 
-		<!-- Google tag (gtag.js), deferred to protect initial page load -->
+		<!-- Load analytics after the page finishes loading to prioritize the portfolio content. -->
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -41,280 +49,197 @@
 		</script>
 	</head>
 	<body class="is-preload">
+		<div id="wrapper">
+			<!-- Intro, primary calls to action, and section navigation. -->
+			<header id="header">
+				<div class="logo">
+					<a href="#about" aria-label="Open About section">
+						<img src="images/self1.jpeg" alt="Charlemagne Marc" class="profile-photo" />
+					</a>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>Charlemagne Marc</h1>
+						<p>Software developer building scientific data pipelines and full-stack applications.<br />
+						AirHARP2 SWIR calibration and Level 1A processing at UMBC’s Earth and Space Institute.</p>
+						<!-- Keep the résumé and direct contact paths visible without opening a section. -->
+						<ul class="actions special hero-actions">
+							<li><a class="button primary" href="files/Charlemagne_Resume_2026.pdf" target="_blank" rel="noopener noreferrer">View résumé</a></li>
+							<li><a class="button" href="https://github.com/chamarc1" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+							<li><a class="button" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- These links open the corresponding modal-style articles below. -->
+				<nav aria-label="Main navigation">
+					<ul>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="files/Charlemagne_Resume_2026.pdf" target="_blank" rel="noopener noreferrer">Résumé</a></li>
+					</ul>
+				</nav>
+			</header>
 
-		<!-- Wrapper -->
-			<!-- Site content, project writeups, and coaching profile authored by Charlemagne Marc. -->
-			<div id="wrapper">
+			<!-- Each article is an addressable section managed by assets/js/main.js. -->
+			<div id="main">
+				<!-- Portfolio landing section with links to the detailed project case studies. -->
+				<article id="work">
+					<h2 class="major">Selected Work</h2>
+					<p>Scientific software for AirHARP2 SWIR sensor calibration and Earth-observation data processing.</p>
+					<div class="project-cards">
+						<a class="project-card" href="#flatfield">
+							<h3>SWIR Flatfield Calibration</h3>
+							<p>Calibration workflow for dark-frame correction, sensor response characterization, and flatfield application.</p>
+							<span>Python · NumPy · SciPy · Image processing</span>
+						</a>
+						<a class="project-card" href="#swir-l1a">
+							<h3>SWIR Level 1A Pipeline</h3>
+							<p>Processing pipeline that matches sensor frames with metadata and writes time-segmented NetCDF4 granules.</p>
+							<span>Python · NetCDF4 · Data pipelines</span>
+						</a>
+						<a class="project-card" href="#vnir-quicklook">
+							<h3>VNIR Quicklook Generator</h3>
+							<p>Creates time-aligned spectral quicklooks from AirHARP2 VNIR L1A products for flight-leg review.</p>
+							<span>Python · NetCDF4 · Matplotlib · Visualization</span>
+						</a>
+					</div>
+					<p class="project-note">Open a project for its approach, selected output, and source links.</p>
+				</article>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<a href="#about" aria-label="Open About section">
-								<img src="images/self1.jpeg" alt="Charlemagne Marc profile photo" class="profile-photo" />
-							</a>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Charlemagne Marc</h1>
-								<p>Software Developer focused on scientific data pipelines and full-stack engineering.<br />
-								AirHARP2 SWIR calibration and Level 1A workflow development at UMBC ESI. Travel Soccer Coach.</p>
+				<!-- AirHARP2 SWIR calibration case study and representative visual results. -->
+				<article id="flatfield">
+					<h2 class="major">SWIR Flatfield Calibration</h2>
+					<p><b>AirHARP2 SWIR sensor calibration · UMBC Earth and Space Institute · 2024–2025</b></p>
+					<p><b>Problem:</b> Prepare SWIR sensor images for downstream Level 1A processing by characterizing response variation and correcting dark signal and pixel defects.</p>
+					<p><b>Contribution:</b> Built modular Python tooling for dark-frame averaging and subtraction, composite generation across filter-wheel positions, quadratic-envelope flatfield characterization, outlier rejection, defect masking, and corrected-image generation.</p>
+					<p><b>Approach:</b> Used cross-track and along-track profiles with ratio thresholding and Savitzky–Golay smoothing to support repeatable calibration runs and inspect fit quality.</p>
+					<figure class="image main">
+						<img src="images/flatfield-method-fit-envelope.png" alt="Quadratic envelope fitted to a SWIR sensor response profile" loading="lazy" />
+						<figcaption>Quadratic envelope fit used to characterize the sensor response.</figcaption>
+					</figure>
+					<figure class="image main">
+						<img src="images/flatfield-mask-applied-visual-correction.png" alt="SWIR image after application of the flatfield mask and visual correction" loading="lazy" />
+						<figcaption>Example image after flatfield mask application and first-order visual correction.</figcaption>
+					</figure>
+					<p><b>Tools:</b> Python, NumPy, SciPy, Pandas, Matplotlib, Pillow, and command-line batch workflows.</p>
+					<ul class="project-links">
+						<li><a href="https://github.com/chamarc1/SWIR_Flatfield" target="_blank" rel="noopener noreferrer">Source repository</a></li>
+						<li><a href="files/Flatfiled/README.md" target="_blank" rel="noopener noreferrer">Project README</a></li>
+						<li><a href="files/Flatfiled/AirHARP2_SWIR_Cal_UMBC_2025.pdf" target="_blank" rel="noopener noreferrer">Calibration presentation (PDF)</a></li>
+					</ul>
+				</article>
+
+				<!-- Level 1A processing case study and example NetCDF4 output. -->
+				<article id="swir-l1a">
+					<h2 class="major">SWIR Level 1A Pipeline</h2>
+					<p><b>AirHARP2 SWIR processing · UMBC Earth and Space Institute</b></p>
+					<p><b>Problem:</b> Turn raw SWIR TIFF frames and associated metadata into consistently organized Level 1A products for analysis and archival.</p>
+					<p><b>Contribution:</b> Implemented capture-ID matching between image and metadata records, chronological processing, flight-leg detection from timestamp gaps, and segmentation into standard five-minute NetCDF4 granules.</p>
+					<p><b>Output:</b> Frame-based image data organized with timestamps, sensor state, and navigation records to support downstream inspection and analysis.</p>
+					<figure class="image main">
+						<img src="images/ezgif-8f6350dc81eb8a43.gif" alt="Panoply rendering of sensor1 image data from a generated SWIR Level 1A NetCDF granule" loading="lazy" />
+						<figcaption>Example sensor image rendered from a generated NetCDF4 granule.</figcaption>
+					</figure>
+					<p><b>Tools:</b> Python, NumPy, Pandas, NetCDF4, Pillow, multiprocessing, and XML parsing.</p>
+					<ul class="project-links">
+						<li><a href="https://github.com/chamarc1/SWIR-L1AGen" target="_blank" rel="noopener noreferrer">Source repository</a></li>
+						<li><a href="files/swir-l1agen/README.md" target="_blank" rel="noopener noreferrer">Project README</a></li>
+						<li><a href="files/swir-l1agen/requirements.txt" target="_blank" rel="noopener noreferrer">Requirements</a></li>
+					</ul>
+				</article>
+
+				<!-- AirHARP2 VNIR quicklook generation case study with a representative leg output. -->
+				<article id="vnir-quicklook">
+					<h2 class="major">VNIR Quicklook Generator</h2>
+					<p><b>AirHARP2 VNIR L1A data review</b></p>
+					<p><b>Problem:</b> Make flight-campaign VNIR Level 1A data easier to review for coverage and data quality without manually inspecting each NetCDF4 granule.</p>
+					<p><b>Contribution:</b> Built a modular Python command-line workflow that discovers VNIR L1A NetCDF4 files, reads their time coverage and sensor metadata, and creates quicklook plots for flight legs or requested time windows.</p>
+					<p><b>Output:</b> PNG quicklooks combine pushbroom measurements at four fixed wavelengths with UTC time and cross-track pixel axes. An optional sensor-temperature panel adds instrument context to the same view.</p>
+					<figure class="image main">
+						<img src="files/VNIR-Quicklook/tests/nyx_mobile/quicklooks/08-01/INSPYRE-AH2VNIR-L1A_ER2_20260801_RA_L05G001_Leg05-quicklook.png" alt="AirHARP2 VNIR Level 1A quicklook for flight leg 5, with four wavelength panels and sensor temperature over time" loading="lazy" />
+						<figcaption>Example leg-wise VNIR quicklook showing spectral channels and sensor temperature over time.</figcaption>
+					</figure>
+					<p><b>Tools:</b> Python, NetCDF4, NumPy, and Matplotlib.</p>
+					<ul class="project-links">
+						<li><a href="files/VNIR-Quicklook/README.md" target="_blank" rel="noopener noreferrer">Project README and usage</a></li>
+						<li><a href="files/VNIR-Quicklook/requirements.txt" target="_blank" rel="noopener noreferrer">Requirements</a></li>
+						<li><a href="files/VNIR-Quicklook/l1agen_ah2vnir_quicklook.py" target="_blank" rel="noopener noreferrer">Command-line entry point</a></li>
+					</ul>
+				</article>
+
+				<!-- Research experience, community leadership, and education. -->
+				<article id="experience">
+					<h2 class="major">Experience</h2>
+					<h3>Earth and Space Institute · UMBC</h3>
+					<p>Contributed software for AirHARP2 SWIR calibration and Level 1A processing in support of Earth-observation research. ESI works across Earth observation and atmospheric science, including aerosols, clouds, and climate.</p>
+					<p><a href="https://esi.umbc.edu" target="_blank" rel="noopener noreferrer">Learn about the Earth and Space Institute</a></p>
+
+					<h3>Community Leadership</h3>
+					<p>Youth travel soccer coach with the Soccer Association of Columbia. Coaching focuses on player development, teamwork, communication, and continuous learning. Earned a USSF National D license and received SAC Coach of the Year recognition.</p>
+					<p><a href="https://irp.cdn-website.com/0946d697/files/uploaded/2024_SAC_AGM.pdf" target="_blank" rel="noopener noreferrer">SAC 2024 annual meeting report</a></p>
+
+					<h3>Education</h3>
+					<ul class="education-list">
+						<li><b>University of Maryland Global Campus</b> — BS, Computer Science (Jan 2021–Dec 2025)</li>
+						<li><b>University of Maryland Global Campus</b> — Undergraduate Certificate, Vulnerability Assessment (Jan 2022–May 2023)</li>
+						<li><b>University of Maryland, Baltimore County</b> — Mathematics and Computer Science (Fall 2009–Spring 2011)</li>
+					</ul>
+				</article>
+
+				<!-- Short professional profile and downloadable résumé. -->
+				<article id="about">
+					<h2 class="major">About</h2>
+					<p>I’m a software developer focused on scientific data pipelines and full-stack engineering. At UMBC’s Earth and Space Institute, I worked on AirHARP2 SWIR processing from sensor calibration through Level 1A product generation.</p>
+					<p>I enjoy building clear, repeatable tools that help turn complex data into dependable outputs. My work spans image processing, metadata matching, time-based data organization, and NetCDF4 products.</p>
+					<p><b>Core technologies:</b> Python, Java, JavaScript, SQL, HTML/CSS, React, Node.js, Flask, NumPy, SciPy, Matplotlib, NetCDF4, Git, and Docker.</p>
+					<p>Coaching has shaped how I work with teams: communicate clearly, build fundamentals, and improve through consistent practice.</p>
+					<p><a class="button primary" href="files/Charlemagne_Resume_2026.pdf" download>Download résumé (PDF)</a></p>
+				</article>
+
+				<!-- Contact form is submitted through FormSubmit; keep its redirect in sync with the deployed URL. -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<p>Interested in software engineering, scientific data workflows, or collaboration? Send me a message or connect on LinkedIn.</p>
+					<form id="contact-form" action="https://formsubmit.co/chamarc1@outlook.com" method="POST" accept-charset="UTF-8">
+						<input type="hidden" name="_subject" value="Portfolio Contact Message" />
+						<input type="hidden" name="_captcha" value="false" />
+						<input type="hidden" name="_template" value="table" />
+						<input type="hidden" name="_next" value="https://chamarc1.github.io/" />
+						<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" autocomplete="name" required />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" autocomplete="email" required />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4" required></textarea>
 							</div>
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#esi">ESI</a></li>
-								<li><a href="#flatfield">Flatfield</a></li>
-								<li><a href="#swir-l1a">SWIR L1A</a></li>
-								<li><a href="#coaching">Coaching</a></li>
-								<li><a href="#education">Education</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- ESI -->
-							<article id="esi">
-								<h2 class="major">ESI</h2>
-								<p><b>Earth and Space Institute (ESI) – UMBC</b><br>
-									The Earth and Space Institute at the University of Maryland, Baltimore County focuses on Earth observation and atmospheric research, with strong work in aerosols, clouds, and climate science.</p>
-								<span class="image main"><img src="images/UMBC.jpg" alt="UMBC campus" /></span>
-								<p><b>Current Research Highlights:</b><br>
-									ESI contributes to NASA missions and campaigns, including HARP2 on PACE and the 2026 INSPYRE campaign studying wildfire-driven pyrocumulonimbus storms using the AirHARP2 instrument suite.</p>
-								<p><b>Maryland Aerospace Industry and Education Roundtable (Oct 23, 2024):</b><br>
-									ESI faculty, interns, and students attended the roundtable at the University of Maryland, College Park to connect with aerospace industry leaders, state representatives, and federal partners including NASA and NOAA, supporting collaboration and STEM workforce opportunities.</p>
-								<span class="image main"><img src="images/esi-md-roundtable-group-photo-b.jpg" alt="ESI MD Roundtable group photo B" /></span>
-								<p>Read the full post: <a href="https://esi.umbc.edu/post/145048/" target="_blank">ESI joins the Maryland Aerospace Industry and Education Roundtable</a>.</p>
-								<p><b>Programs and Resources:</b><br>
-									The institute shares project pages, publications, instrumentation efforts, news updates, and academic resources through its site. Learn more at <a href="https://esi.umbc.edu" target="_blank">esi.umbc.edu</a>.</p>
-							</article>
-
-						<!-- Flatfield Project -->
-						<article id="flatfield">
-							<h2 class="major">Flatfield</h2>
-							<p><b>SWIR Flatfield Sensor Calibration (ESI @ UMBC | 10/2024–08/2025)</b><br>
-								Built and maintained a production-ready Python calibration pipeline for AirHARP2 SWIR sensor data, focused on improving radiometric consistency before downstream Level-1A processing.</p>
-							<p><b>Mission Context:</b><br>
-								This work supported Earth-observation instrument readiness and analysis for AirHARP2 SWIR operations, including calibration workflows documented in the 2025 AirHARP2 SWIR calibration deck.</p>
-							<p><b>What I Implemented:</b><br>
-								(1) dark-frame averaging and subtraction to remove bias/thermal noise, (2) composite generation with equalized sampling across degree positions, (3) flatfield characterization normalized to mean response, (4) quadratic envelope modeling across cross-track and along-track line cuts, and (5) outlier rejection using sigma filtering with Savitzky-Golay smoothing for robust profile fitting.</p>
-							<p><b>Signal Analysis and Quality Controls:</b><br>
-								Developed 1D profile extraction, parabola-core/FWHM-style region analysis, curve-fit diagnostics, defective-pixel handling via median-filter replacement, and corrected-image clipping to 14-bit sensor bounds for consistent output integrity.</p>
-							<p><b>Pipeline Architecture:</b><br>
-								Modular processors separate image ingestion, composite generation, and flatfield application. The CLI entrypoint accepts wheel position and smoothing controls, then generates quadratic-envelope and pixel-response characterizations for repeatable calibration runs.</p>
-							
-							<p><b>Flatfield Method:</b><br>
-								Quadratic envelope fitting, ratio-based thresholding, outlier rejection, and smoothing for stable full-FOV correction.</p>
-							<span class="image main"><img src="images/flatfield-method-fit-envelope.png" alt="Flatfield method - quadratic envelope fit" /></span>
-							<p>Quadratic fit to signal envelope.</p>
-							<span class="image main"><img src="images/flatfield-method-histogram-outlier-rejection.png" alt="Flatfield method - histogram and outlier rejection" /></span>
-							<p>Histogram ratio thresholding and outlier rejection.</p>
-
-							<p><b>Defects and Multiplicative Mask:</b><br>
-								Mask derivation and defect visibility analysis from large-scale averaged calibration data.</p>
-							<span class="image main"><img src="images/flatfield-defects-mask-derived.png" alt="Defects and Multiplicative Mask - derived mask view" /></span>
-							<p>Defects and Multiplicative Mask — derived mask view.</p>
-							<span class="image main"><img src="images/flatfield-defects-raw-image.png" alt="Defects and Multiplicative Mask - raw image defect view" /></span>
-							<p>Defects and Multiplicative Mask — raw image defect view.</p>
-
-							<p><b>Mask Applied and First-Order Visual Correction:</b><br>
-								Application of the multiplicative mask and first-order correction steps, including local gap filling.</p>
-							<span class="image main"><img src="images/flatfield-mask-applied-visual-correction.png" alt="Mask applied plus first-order visual correction" /></span>
-							<p>Mask Applied and First-Order Visual Correction.</p>
-
-							<p><b>Tech Stack:</b> Python, NumPy, SciPy (ndimage/signal/optimize), Pandas, Matplotlib, Pillow (PIL), argparse, JSON diagnostics, and HPC-aligned batch calibration workflows</p>
-							<p><b>Environment:</b> Python 3.7+; install with <code>pip install numpy matplotlib scipy pillow pandas</code></p>
-							<p><b>Project Artifacts:</b><br>
-								<a href="files/Flatfiled/README.md" target="_blank">README.md</a><br>
-								<a href="files/Flatfiled/AirHARP2_SWIR_Cal_UMBC_2025.pdf" target="_blank">AirHARP2_SWIR_Cal_UMBC_2025.pdf</a><br>
-								<a href="files/Flatfiled/202502_SWIR_Flatfield_Matched_Metadata_v2.csv" target="_blank">202502_SWIR_Flatfield_Matched_Metadata_v2.csv</a></p>
-
-							<p><b>Source Files:</b><br>
-								Browse in GitHub: <a href="https://github.com/chamarc1/SWIR_Flatfield/tree/main" target="_blank">SWIR_Flatfield repository</a><br>
-							<p><b>Directory Structure:</b><br>
-							<pre><code>files/Flatfiled/
-├── README.md
-├── AirHARP2_SWIR_Cal_UMBC_2025.pdf
-├── 202502_SWIR_Flatfield_Matched_Metadata_v2.csv
-├── Main.py
-├── analyze_flatfield_effectiveness.py
-├── create_summary_visualization.py
-├── diagnose_flatfield.py
-├── find_optical_centers.py
-├── project_modules/
-│   ├── CompositeProcessor.py
-│   ├── Constants.py
-│   ├── FlatfieldProcessor.py
-│   ├── ImageProcessor.py
-│   └── SWIR_Image_Data_TEC_Metadata_Matcher.py
-├── test_effectiveness_fix.py
-├── test_optical_center_fix.py
-├── metadata_matcher/
-│   └── 202502_SWIR_Flatfield_Matched_Metadata_v2.csv
-└── Images/
-    ├── Corrected_Images/
-    ├── OpticalCenter_Analysis/
-    └── PowerPoint_Plots/</code></pre>
-						</article>
-
-						<!-- SWIR L1A -->
-							<article id="swir-l1a">
-								<h2 class="major">SWIR L1A</h2>
-								<p><b>SWIR L1A Generation Pipeline:</b><br>
-									Production workflow for converting AirHARP2 SWIR raw TIFF frames into Level 1A NetCDF4 granules for mission analysis and archival.</p>
-								<p><b>Key Contributions:</b><br>
-									Implemented CFC-capture-ID metadata matching, chronological frame processing, and filter-position-aware data organization across the SWIR processing modules.</p>
-								<p><b>Granule Controller:</b><br>
-									Automated flight-leg detection from timestamp gaps, then segmented data into standard 5-minute (300 second) granules with support for parallel job execution.</p>
-								<p><b>Metadata and Image Matching:</b><br>
-									Matched `.tif` images to `.meta` records by capture ID and exported aligned TEC temperature, filter position, and integration-time fields for each processed frame.</p>
-								<p><b>Workflow Focus:</b><br>
-									Data ingest, corrupted-file filtering, time extraction from CFC IDs, and reproducible Level 1A output generation with robust logging and progress tracking.</p>
-								<p><b>Tech Stack:</b> Python, NumPy, Pandas, NetCDF4, Pillow (PIL), argparse, multiprocessing, subprocess orchestration, pathlib, XML parsing (ElementTree), and Slurm/GNU Parallel-ready batch execution</p>
-								<p><b>Environment:</b> Python 3.9+; install with <code>pip install -r requirements.txt</code> (or <code>pip install numpy pandas netCDF4 Pillow</code>)</p>
-								<p><b>NetCDF4 Product Content:</b><br>
-									Unified frame-based image storage (`sensor1`), timing variables (`time_stamp`, `JD`, `seconds_of_day`), sensor state (`filter_wheel_position`, `integration_time`, `sensor_temperature`), and navigation groups for attitude/orbit records.</p>
-								<p><b>Panoply and NetCDF Demonstration:</b><br>
-									Example Panoply views of the generated SWIR L1A NetCDF file, including variable tree inspection and rendered sensor image output.</p>
-								<span class="image main"><img src="images/Screenshot 2026-03-05 at 10.56.53.png" alt="Panoply variable and NetCDF structure view for SWIR L1A file" /></span>
-								<p>Panoply dataset browser showing SWIR L1A NetCDF groups, variables, and metadata layout.</p>
-								<span class="image main"><img src="images/ezgif-8f6350dc81eb8a43.gif" alt="Panoply rendered SWIR sensor1 image from NetCDF output" /></span>
-								<p>Panoply rendering of <b>sensor1</b> counts from a generated SWIR L1A NetCDF granule.</p>
-								<p><b>Project Artifacts:</b><br>
-									<a href="files/swir-l1agen/README.md" target="_blank">README.md</a><br>
-									<a href="files/swir-l1agen/requirements.txt" target="_blank">requirements.txt</a></p>
-
-								<p><b>Source Files:</b><br>
-									Browse in GitHub: <a href="https://github.com/chamarc1/SWIR-L1AGen" target="_blank">SWIR-L1AGen</a><br>
-								<p><b>Directory Structure:</b></p>
-								<pre><code>files/swir-l1agen/
-├── README.md
-├── requirements.txt
-├── l1agen_SWIR_Granule_Controller.py
-├── l1agen_SWIR_NC_Processor.py
-├── modules_l1a_SWIR/
-│   ├── __init__.py
-│   ├── l1agen_Constants.py
-│   ├── l1agen_SWIR_Image_Data_TEC_Metadata_Matcher.py
-│   └── l1agen_SWIR_Img_Processor.py
-├── project_modules/
-│   ├── Constants.py
-│   ├── SWIR_Granule_Controller.py
-│   ├── SWIR_Image_Data_TEC_Metadata_Matcher.py
-│   ├── SWIR_Img_Processor.py
-│   └── SWIR_NC_Processor.py
-├── runs/
-│   ├── l1agen_swir_batch.sh
-│   └── log-cmarc/
-└── tests/
-    ├── __init__.py
-    ├── AH2_SWIR_Camera_Visualizer.ipynb
-    ├── l1agen_ah2uv.py
-    ├── l1agen_ah2uv_controller.py
-    └── test_load_granules.py</code></pre>
-							</article>
-
-						<!-- Coaching -->
-							<article id="coaching">
-								<h2 class="major">Coaching</h2>
-								<span class="image main"><img src="images/sac+ba+Logo-1920w.png" alt="" /></span>
-								<p><b>Coaching – Soccer Association of Columbia (SAC):</b> <em>08/13–Present</em><br>
-									Current assignment (Fall 2025/Spring 2026): listed on SAC Travel Coaches as coach for <b>Boys 2017 Pre-MLS NEXT United Gold</b>. See <a href="https://www.sackick.com/travel/pre-academy-coaches-2025/2026" target="_blank">SAC Travel Coaches (2025/2026)</a>.</p>
-								<p><b>Tournament Win:</b> Boys 2017 United Gold is on a hot streak, winning their third tournament in a row! The boys won their division in Baltimore Mania, scoring 27 goals and only conceding one! <a href="https://www.instagram.com/soccerassociationofcolumbiaba/p/DWM118zGFWP/" target="_blank">View on Instagram</a> | <a href="https://www.facebook.com/SoccerAssociationofColumbia/posts/pfbid02VGmQ13Re5nWiwvCRPMJg2TWzerRdbq53bn75ReYmDY4mhgmjzyXDqv7VJy2E4nDMl" target="_blank">View on Facebook</a>.</p>
-								<span class="image main"><img src="images/656163290_1764601718217899_3640035770218793829_n.jpg" alt="SAC Boys 2017 United Gold Baltimore Mania Tournament Winners" /></span>
-								<p><b>Tournament Win:</b> Boys 2017 United Gold were SAC Columbus Day Tournament Champions (all wins, 27 goals scored, 2 conceded). <a href="https://www.facebook.com/SoccerAssociationofColumbia/posts/pfbid0ruFTpnViq9HZ9r9q1xv5cWyrXJ5V8HdpAoHLZLYf3DMELSAFxSVUB2JewBCuQXzil" target="_blank">View post</a>.</p>
-								<span class="image main"><img src="images/sac-2017-united-gold-columbus-day-champions.jpg" alt="SAC Boys 2017 United Gold Columbus Day Tournament Champions" /></span>
-								<p><b>Tournament Win:</b> Boys 2017 United Gold with Coach Marc won their bracket in the Celtic Cup tournament, finishing an exciting final 7–4. <a href="https://www.facebook.com/SoccerAssociationofColumbia/posts/boys-2017-united-gold-with-coach-marc-won-their-bracket-in-the-celtic-cup-tourna/1670818897596182/" target="_blank">View post</a>.</p>
-								<span class="image main"><img src="images/sac-2017-united-gold-celtic-cup-bracket-win.jpg" alt="SAC Boys 2017 United Gold Celtic Cup bracket win" /></span>
-								<p>Coaching background includes boys travel/select teams across U9 through U14 age groups, with roster sizes ranging from small-sided development formats to full-sided competitive teams.</p>
-								<p><b>Coach of the Year:</b> Recognized by SAC (see <a href="https://irp.cdn-website.com/0946d697/files/uploaded/2024_SAC_AGM.pdf" target="_blank">2024 SAC AGM</a>).</p>
-								<p>I have coached seven seasons of competitive soccer and earned my USSF National D license. I am a product of SAC/HC's youth select program and played for Mount Saint Joseph High School.</p>
-								<span class="image main"><img src="images/team-photo1.jpeg" alt="" /></span>
-								<p>My goal is to pass along the knowledge I have gained as both a player and coach, while helping players build technique, tactical awareness, teamwork, and sportsmanship.</p>
-								<span class="image main"><img src="images/team-photo2.jpeg" alt="" /></span>
-								<p>I continue to invest in coach education and apply new training methods to support long-term player development on and off the field.</p>
-								<span class="image main"><img src="images/team-photo3.jpeg" alt="" /></span>
-							</article>
-
-						<!-- Education -->
-							<article id="education">
-								<h2 class="major">Education</h2>
-								<span class="image main"><img src="images/UMGC.png" alt="" /></span>
-								<p><b>University of Maryland Global Campus</b><br><em>BS, Computer Science</em><br><em>Jan 2021-Dec 2025</em><p>
-								<p><b>University of Maryland Global Campus</b><br><em>Undergrad Certificate, Vulnerability Assessment</em><br><em>Jan 2022-May 2023</em></p>
-								<span class="image main"><img src="images/UMBC.jpg" alt="" /></span>
-								<P><b>University of Maryland Baltimore County</b><br><em>Mathematics and Computer Science</em><br><em>Fall 2009-Spring 2011</em></P>
-								<span class="image main"><img src="images/MSJ.jpg" alt="" /></span>
-								<p><b>Mount Saint Joseph High School</b><br><em>High School Diploma</em><br></p>
-							</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/self1.jpeg" alt="" /></span>
-								<p><b>Software Developer Focused on Scientific Data Pipelines and Full-Stack Engineering</b></p>
-								<p>Over the last few years, I have focused on Earth-observation work at UMBC's Earth and Space Institute, where I developed Python workflows for AirHARP2 SWIR processing from calibration through Level 1A product generation.</p>
-								<p>In the Flatfield project, I built and maintained calibration tooling for dark-frame correction, composite generation, defect masking, and quadratic-envelope-based flatfield normalization because I care about producing clean, reliable data for downstream analysis.</p>
-								<p>In the SWIR L1A project, I implemented metadata/image matching by capture ID, chronological frame processing, flight-leg segmentation, and 5-minute NetCDF4 granule generation for reproducible mission analysis and archival.</p>
-								<p><b>Core Stack:</b> Python, Java, JavaScript, SQL, HTML/CSS, React, Node.js, Flask, NumPy, SciPy, Matplotlib, NetCDF4, Git, Docker</p>
-								<p>Alongside research software work, I also build web applications and bring a coach's mindset to engineering: clear communication, repeatable systems, and continuous improvement.</p>
-								<p>While I was in school, I worked as a security guard at UMBC to help put myself through college, and that experience shaped my work ethic, discipline, and sense of responsibility.</p>
-								<p><b>Resume:</b> <a href="files/Charlemagne_Resume_2026.pdf" target="_blank">Charlemagne_Resume_2026.pdf</a></p>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form id="contact-form" action="https://formsubmit.co/chamarc1@outlook.com" method="POST" accept-charset="UTF-8">
-									<input type="hidden" name="_subject" value="Portfolio Contact Message" />
-									<input type="hidden" name="_captcha" value="false" />
-									<input type="hidden" name="_template" value="table" />
-									<input type="hidden" name="_next" value="https://chamarc1.github.io/" />
-									<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" required />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="email" name="email" id="email" required />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4" required></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-									<p id="contact-status" style="display:none; margin-top: 0.75rem;">Opening your email client...</p>
-								</form>
-
-								<ul class="icons">
-									<li><a href="http://www.linkedin.com/in/charlamagne-marc-84966189" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								</ul>
-							</article>
-
-					</div>
-
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/charlamagne-marc-84966189" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin" aria-label="LinkedIn profile"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</article>
 			</div>
+		</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<!-- Front-end behavior maintained and customized by Charlemagne Marc. -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<!-- Decorative background is hidden from assistive technology. -->
+		<div id="bg" aria-hidden="true"></div>
+		<!-- Site interaction dependencies; load the customized navigation behavior last. -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

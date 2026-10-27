@@ -4,15 +4,11 @@ Professional portfolio site hosted with GitHub Pages.
 
 ## Overview
 
-This repository contains a static HTML/CSS/JS portfolio featuring:
+This repository contains a static HTML/CSS/JS portfolio organized around:
 
-- ESI (Earth and Space Institute)
-- Flatfield project
-- SWIR L1A project
-- Coaching
-- Education
-- About
-- Contact
+- Selected work: SWIR Flatfield calibration, SWIR Level 1A processing, and VNIR quicklook generation
+- Experience: Earth and Space Institute, coaching, and education
+- About, résumé, and contact links
 
 Primary entry point: `index.html`
 
@@ -51,15 +47,11 @@ Open in a browser:
 - Add or update project artifacts under `files/`
 - Add or update images under `images/`
 
-### Flatfield and SWIR L1A Sections
+### Project Case Studies
 
-Both project sections in `index.html` use the same structure:
+Project summaries in `index.html` focus on the problem, contribution, approach or output, selected visuals, and links to source or supporting artifacts. Keep setup instructions, full file listings, and implementation details in the linked project READMEs rather than duplicating them on the portfolio page.
 
-1. Tech Stack
-2. Environment
-3. Project Artifacts
-4. Source Files
-5. Directory Structure
+The résumé is linked from the homepage and About section. Update the PDF in `files/` and its links together when publishing a new version.
 
 ## Deployment
 
@@ -77,13 +69,13 @@ After push, GitHub Pages publishes the updated site automatically.
 
 ## Website Tracking (Location + Visit Time)
 
-Google Analytics 4 has been added to `index.html` with a placeholder measurement ID.
+Google Analytics 4 is configured in `index.html`.
 
-Setup steps:
+To use a different property:
 
 1. Create a GA4 property and Web Data Stream for `https://chamarc1.github.io`
 2. Copy your Measurement ID (format: `G-XXXXXXXXXX`)
-3. In `index.html`, replace both `G-XXXXXXXXXX` values with your real ID
+3. In `index.html`, replace both measurement ID values with the new ID
 4. Push changes to GitHub Pages
 
 What you can see in GA4:
@@ -100,9 +92,9 @@ Before each push:
 
 - Verify all links in `index.html` resolve correctly (artifacts, images, and external references)
 - Confirm any renamed files in `files/` or `images/` are updated in `index.html`
-- Ensure Flatfield and SWIR L1A retain the same block order and label style
-- Confirm newly added images render at the expected size and aspect ratio
-- Verify downloadable artifacts open from the deployed site path
+- Confirm homepage, case study, résumé, and contact links work
+- Confirm project visuals and downloadable artifacts load at the deployed site path
+- Check keyboard focus, mobile navigation, and horizontal overflow
 - Review heading capitalization and punctuation for consistency
 - Run a local preview (`python3 -m http.server 8000`) and perform a full-page visual pass
 
@@ -126,6 +118,21 @@ Use this template for each update:
 - Local preview checked at `http://localhost:8000`
 - Key links/artifacts verified
 ```
+
+### 2026-10-27
+
+#### Changed
+- Reorganized the homepage around résumé access, selected work, experience, and contact
+- Reframed SWIR project content as concise case studies and moved setup/file-list details to project READMEs
+- Shortened coaching and education content while retaining the existing education dates
+- Added social preview metadata, descriptive image text, external-link protections, and visible keyboard focus
+- Updated responsive styles for project cards and mobile case-study headings
+
+#### Validation
+- Local browser preview checked at desktop and mobile widths
+- Project navigation and mobile horizontal overflow verified
+- Local links, images, and external-link attributes checked
+- `git diff --check` passes
 
 ### 2026-03-06
 

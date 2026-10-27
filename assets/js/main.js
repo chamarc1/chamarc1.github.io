@@ -51,21 +51,10 @@
 
 		}
 
-	// Nav.
-		var $nav = $header.children('nav'),
-			$nav_li = $nav.find('li');
-
-		// Add "middle" alignment classes if we're dealing with an even number of items.
-			if ($nav_li.length % 2 == 0) {
-
-				$nav.addClass('use-middle');
-				$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
-
-			}
-
 	// Main.
 		var	delay = 325,
-			locked = false;
+			locked = false,
+			focusReturn = null;
 
 		// Methods.
 			$main._show = function(id, initial) {
@@ -75,6 +64,13 @@
 				// No such article? Bail.
 					if ($article.length == 0)
 						return;
+
+				if (!$body.hasClass('is-article-visible')) {
+					var activeElement = document.activeElement;
+					focusReturn = activeElement && activeElement !== document.body
+						? $(activeElement)
+						: null;
+				}
 
 				// Handle lock.
 
@@ -100,6 +96,7 @@
 
 							// Activate article.
 								$article.addClass('active');
+								$article.find('.close').trigger('focus');
 
 							// Unlock.
 								locked = false;
@@ -137,6 +134,7 @@
 									setTimeout(function() {
 
 										$article.addClass('active');
+										$article.find('.close').trigger('focus');
 
 										// Window stuff.
 											$window
@@ -176,6 +174,7 @@
 									setTimeout(function() {
 
 										$article.addClass('active');
+										$article.find('.close').trigger('focus');
 
 										// Window stuff.
 											$window
@@ -226,6 +225,10 @@
 							// Show footer, header.
 								$footer.show();
 								$header.show();
+								(focusReturn && focusReturn.is(':visible')
+									? focusReturn
+									: $header.find('nav a').first()).trigger('focus');
+								focusReturn = null;
 
 							// Unmark as visible.
 								$body.removeClass('is-article-visible');
@@ -266,6 +269,10 @@
 							setTimeout(function() {
 
 								$body.removeClass('is-article-visible');
+								(focusReturn && focusReturn.is(':visible')
+									? focusReturn
+									: $header.find('nav a').first()).trigger('focus');
+								focusReturn = null;
 
 								// Window stuff.
 									$window
@@ -290,7 +297,7 @@
 				var $this = $(this);
 
 				// Close.
-					$('<div class="close">Close</div>')
+					$('<button type="button" class="close" aria-label="Close section">Close</button>')
 						.appendTo($this)
 						.on('click', function() {
 							location.hash = '';

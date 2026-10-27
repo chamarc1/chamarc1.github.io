@@ -1,0 +1,13 @@
+.nfs*
+*/.nfs*
+__pycache__/
+runs/
+references/
+references
+tests/
+tests
+__pycache__/
+__pycache__
+logs/
+logs
+*.py[cod]

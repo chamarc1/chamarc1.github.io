@@ -1,0 +1,32 @@
+# AirHARP2 VNIR Quicklook argument-file template
+# Run with:
+# python l1agen_ah2vnir_quicklook.py @config_templates/TEMPLATE_config_l1agen_ah2vnir_quicklook.txt
+
+# --l1a_path: Required directory containing VNIR L1A NetCDF4 files.
+--l1a_path          = "/path/to/vnir/l1a/files"
+# --save_path: Required directory where quicklook PNG files are saved.
+--save_path         = "/path/to/output/pngs"
+
+# Select one processing mode as needed.
+# --preprocessing_file: Optional leg/granule table for one quicklook per flight leg.
+# --preprocessing_file = "/path/to/GRANULE.txt"
+# --log_file: Optional file containing comma-separated start and end times per line.
+# --log_file           = "/path/to/time_windows.txt"
+# --start_time: Optional ISO datetime start bound; use together with --end_time.
+# --start_time        = "2026-07-27T10:00:00"
+# --end_time: Optional ISO datetime end bound; use together with --start_time.
+# --end_time          = "2026-07-27T10:10:00"
+
+# Optional plotting and output controls.
+# --line_index: Deprecated and ignored; four fixed wavelength rows are used.
+# --line_index = 0
+# --sensor_temp: Include a sensor temperature metadata panel.
+# --sensor_temp
+# --leg_output_naming: Use legacy naming by replacing _L01G000.nc with _L01.png.
+# --leg_output_naming
+# --show: Display each figure in a window as well as saving it.
+# --show
+# --verbose/-v: Print step-by-step processing progress to the console.
+# --verbose
+# --log_output_path: Directory for captured stdout/stderr; files use the process ID.
+# --log_output_path = "/path/to/logs/vnir_quicklook"

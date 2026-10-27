@@ -1231,6 +1231,91 @@ input, select, textarea {
 
 /* Header */
 
+	#header .hero-actions {
+		flex-wrap: wrap;
+		margin-top: 1.5rem;
+	}
+
+	#header .hero-actions li {
+		padding-top: 0.5rem;
+	}
+
+	#main article h2.major {
+		max-width: 100%;
+	}
+
+	.project-cards {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem;
+		margin: 0 0 1.5rem;
+	}
+
+	.project-card {
+		display: block;
+		height: 100%;
+		padding: 1.25rem;
+		border: 1px solid rgba(255, 255, 255, 0.45);
+		border-radius: 4px;
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	.project-card:hover {
+		background: rgba(255, 255, 255, 0.1);
+		border-color: #ffffff;
+	}
+
+	.project-card h3 {
+		margin-bottom: 0.5rem;
+	}
+
+	.project-card p {
+		margin-bottom: 0.75rem;
+	}
+
+	.project-card span {
+		font-size: 0.8rem;
+		letter-spacing: 0.05rem;
+		opacity: 0.8;
+	}
+
+	.project-note {
+		margin-bottom: 0;
+	}
+
+	.project-links {
+		margin-bottom: 1.5rem;
+	}
+
+	.education-list {
+		margin-bottom: 1.5rem;
+	}
+
+	.image.main figcaption {
+		font-size: 0.85rem;
+		opacity: 0.8;
+	}
+
+	a:focus-visible,
+	button:focus-visible,
+	input:focus-visible,
+	textarea:focus-visible {
+		outline: 2px solid #ffffff;
+		outline-offset: 4px;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.project-cards {
+			grid-template-columns: 1fr;
+		}
+
+		#header .hero-actions {
+			margin-top: 1rem;
+		}
+
+	}
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -1349,6 +1434,7 @@ input, select, textarea {
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
+			width: 100%;
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
@@ -1357,8 +1443,18 @@ input, select, textarea {
 		}
 
 			#header nav ul li {
+				-moz-flex: 1 1 7.5rem;
+				-webkit-flex: 1 1 7.5rem;
+				-ms-flex: 1 1 7.5rem;
+				flex: 1 1 7.5rem;
+				min-width: 0;
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
+			}
+
+			#header nav {
+				width: 40rem;
+				max-width: 100%;
 			}
 
 				#header nav ul li:first-child {
@@ -1367,10 +1463,11 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
+					min-width: 0;
+					width: 100%;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					padding: 0 0.5rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
@@ -1384,21 +1481,6 @@ input, select, textarea {
 					#header nav ul li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
-
-		#header nav.use-middle:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: calc(50% - 1px);
-			width: 1px;
-			height: 100%;
-			background: #ffffff;
-		}
-
-		#header nav.use-middle ul li.is-middle {
-			border-left: 0;
-		}
 
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
@@ -1575,6 +1657,15 @@ input, select, textarea {
 				right: 0;
 				width: 4rem;
 				height: 4rem;
+				padding: 0;
+				border: 0;
+				box-shadow: none;
+				background: transparent;
+				color: transparent;
+				font-size: 1rem;
+				letter-spacing: normal;
+				line-height: normal;
+				text-transform: none;
 				cursor: pointer;
 				text-indent: 4rem;
 				overflow: hidden;

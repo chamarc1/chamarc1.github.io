@@ -1,0 +1,26 @@
+# AirHARP2 VNIR Quicklook legwise argument-file template
+# Run with:
+# python l1agen_ah2vnir_quicklook.py @config_templates/TEMPLATE_config_l1agen_ah2vnir_quicklook_legwise.txt
+
+# --l1a_path: Required directory containing VNIR L1A NetCDF4 files.
+--l1a_path           = "/path/to/vnir/l1a/files"
+# --save_path: Required directory where quicklook PNG files are saved.
+--save_path          = "/path/to/output/pngs"
+# --preprocessing_file: Required leg/granule table for one quicklook per flight leg.
+--preprocessing_file = "/path/to/GRANULE.txt"
+
+# Optional plotting and output controls.
+# --sensor_temp: Include a sensor temperature metadata panel.
+# --sensor_temp
+# --leg_output_naming: Use legacy naming by replacing _L01G000.nc with _L01.png.
+# --leg_output_naming
+# --show: Display each figure in a window as well as saving it.
+# --show
+# --verbose/-v: Print step-by-step processing progress to the console.
+# --verbose
+# --line_index: Deprecated and ignored; four fixed wavelength rows are used.
+# --line_index = 0
+# --log_output_path: Directory for captured logs; creates <process ID>.out and <process ID>.err.
+# --log_output_path = "/path/to/logs/vnir_quicklook"
+# --max_workers/-j: Number of worker processes for parallel leg processing (default: 1/sequential; ignored with --show).
+# --max_workers = 4
